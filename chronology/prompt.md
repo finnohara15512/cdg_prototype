@@ -1,0 +1,5 @@
+Please load the CSV from original_docs for encounter 7877228 to see all healthcare records for this synthetic data case.
+
+Your job is to consume each row separately in this CSV and allocate timestamps for the time that the medical case is written for. Each row has a list of strings that represent one document. It is common that an entire document has a single timestamp described at the top of the document. But be aware that sometimes document chunks are for different timestamps. So read the document like a human would and partition it by timestamps as needed. Don't write code to do this, make this judgement on your own for each row.
+
+Please go through each row in the CSV separately, and save one or more resulting rows in a new CSV in the chronology folder with document_id, mrn, encounter_id, **timestamp**, and content. If the content truly does not have anything resembling a timestamp, it may be null, but this is exceedingly rare.
